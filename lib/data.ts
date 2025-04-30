@@ -24,7 +24,7 @@ export const projects: ProjectsData = {
       description: "A modern agency application",
       fullDescription: "A responsive agency website with modern features and animations",
       tags: ["React", "Next.js", "Tailwind"],
-      images: ["/imgs/Agence.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAgence.3123c6fb.png&w=3840&q=75"],
       links: {
         live: "https://agencyahmed.vercel.app/",
         github: "https://github.com/HaddajiDev/Agency_Front/"
@@ -36,7 +36,7 @@ export const projects: ProjectsData = {
       description: "Real-time weather forecasting application",
       fullDescription: "A weather application with real-time updates and location-based forecasting",
       tags: ["React", "API Integration"],
-      images: ["/imgs/Weather.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FWeather.68adc3ef.png&w=1920&q=75"],
       links: {
         live: "https://weather-app-five-ruby-57.vercel.app/",
         github: "https://github.com/HaddajiDev/Weather_App/"
@@ -48,7 +48,7 @@ export const projects: ProjectsData = {
       description: "Full-stack e-commerce platform",
       fullDescription: "Complete e-commerce solution with product management and shopping cart",
       tags: ["React", "Node.js", "MongoDB"],
-      images: ["/imgs/store.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fstore.0ff87c5a.png&w=1920&q=75"],
       links: {
         live: "https://ecommerce-front-pi-blue.vercel.app/",
         github: "https://github.com/HaddajiDev/Ecommerce_Project/"
@@ -60,7 +60,7 @@ export const projects: ProjectsData = {
       description: "Modern blogging platform",
       fullDescription: "Feature-rich blog and content management",
       tags: ["Next.js", "CMS"],
-      images: ["/imgs/blog.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblog.a0eb0f15.png&w=1920&q=75"],
       links: {
         live: "https://savageblog.vercel.app/",
         github: "https://github.com/HaddajiDev/SavageBlog/"
@@ -72,7 +72,7 @@ export const projects: ProjectsData = {
       description: "Real-time chat application",
       fullDescription: "Interactive messaging platform with real-time communication",
       tags: ["WebSocket", "React"],
-      images: ["/imgs/talk.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftalk.d1f49c4f.png&w=1920&q=75"],
       links: {
         live: "https://savage-talk.vercel.app/",
         github: "https://github.com/HaddajiDev/Savage-Talk/"
@@ -84,7 +84,7 @@ export const projects: ProjectsData = {
       description: "File management system",
       fullDescription: "Cloud-based file storage and management solution",
       tags: ["React", "Cloud Storage"],
-      images: ["/imgs/files.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffiles.d1100335.png&w=1920&q=75"],
       links: {
         live: "https://savage-files.vercel.app",
         github: "https://github.com/HaddajiDev/Savage-Files"
@@ -96,7 +96,7 @@ export const projects: ProjectsData = {
       description: "AI-powered application",
       fullDescription: "Artificial intelligence integration platform with various AI features",
       tags: ["AI", "Machine Learning"],
-      images: ["/imgs/ai.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fai.4a434127.png&w=1920&q=75"],
       links: {
         live: "https://savageai.vercel.app",
         github: "https://github.com/HaddajiDev/Savage-AI"
@@ -110,7 +110,7 @@ export const projects: ProjectsData = {
       description: "Mobile puzzle game with gem-matching mechanics",
       fullDescription: "Addictive puzzle game with power-ups and level progression",
       tags: ["Mobile", "Puzzle"],
-      images: ["/imgs/Screenshot 2023-07-18 181741.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FScreenshot%202023-07-18%20181741.483fb8df.png&w=256&q=75"],
       links: {
         live: "https://play.google.com/store/apps/details?id=com.haddajiDev.pirategemrush",
         github: "https://play.google.com/store/apps/details?id=com.haddajiDev.pirategemrush"
@@ -122,7 +122,7 @@ export const projects: ProjectsData = {
       description: "Classic sliding puzzle game",
       fullDescription: "Traditional sliding puzzle with multiple difficulty levels",
       tags: ["Puzzle", "Mobile"],
-      images: ["/imgs/sliding.jpg"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsliding.716a8555.jpg&w=256&q=75"],
       links: {
         live: "https://play.google.com/store/apps/details?id=com.haddajidev.slidingpuzzle",
         github: "https://play.google.com/store/apps/details?id=com.haddajidev.slidingpuzzle"
@@ -134,7 +134,7 @@ export const projects: ProjectsData = {
       description: "Memory matching card game",
       fullDescription: "Pirate-themed memory matching game with multiple difficulty levels",
       tags: ["Memory", "Web"],
-      images: ["/imgs/memory.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmemory.ffb5856b.png&w=256&q=75"],
       links: {
         live: "https://haddajidev.itch.io/puzzle-pirates-memory-edition",
         github: "https://haddajidev.itch.io/puzzle-pirates-memory-edition"
@@ -146,7 +146,7 @@ export const projects: ProjectsData = {
       description: "Classic chess game implementation",
       fullDescription: "Traditional chess game with AI opponent and multiplayer options",
       tags: ["Strategy", "Web"],
-      images: ["/imgs/Chess.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FChess.a43c71de.png&w=640&q=75"],
       links: {
         live: "https://haddajidev.itch.io/chess-with-no-checkmate",
         github: "https://haddajidev.itch.io/chess-with-no-checkmate"
@@ -158,7 +158,7 @@ export const projects: ProjectsData = {
       description: "Incremental clicker game",
       fullDescription: "Pirate-themed incremental clicker game with resource management",
       tags: ["Clicker", "Web"],
-      images: ["/imgs/clicker.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fclicker.66bdd2a3.png&w=640&q=75"],
       links: {
         live: "https://haddajidev.itch.io/treasure-clicker",
         github: "https://haddajidev.itch.io/treasure-clicker"
@@ -169,8 +169,8 @@ export const projects: ProjectsData = {
       slug: "dog-rescue",
       description: "Arcade-style rescue game",
       fullDescription: "Fast-paced arcade game with animal rescue mechanics",
-      tags: ["Arcade", "Mobile"],
-      images: ["/imgs/dog.png", "https://img.itch.zone/aW1hZ2UvMjIzNTU2MC8xMzIzNzIzNi5wbmc=/347x500/eQA8Yc.png", "https://img.itch.zone/aW1hZ2UvMjIzNTU2MC8xMzIzNzIzNy5wbmc=/347x500/U5EV7U.png"],
+      tags: ["Adventure", "PC"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdog.9775f97c.png&w=640&q=75", "https://img.itch.zone/aW1hZ2UvMjIzNTU2MC8xMzIzNzIzNi5wbmc=/347x500/eQA8Yc.png", "https://img.itch.zone/aW1hZ2UvMjIzNTU2MC8xMzIzNzIzNy5wbmc=/347x500/U5EV7U.png"],
       links: {
         live: "https://haddajidev.itch.io/dog-rescue",
         github: "https://haddajidev.itch.io/dog-rescue"
@@ -181,8 +181,8 @@ export const projects: ProjectsData = {
       slug: "the-wizard-and-the",
       description: "Fantasy adventure game",
       fullDescription: "Story-driven RPG with magic and combat system",
-      tags: ["RPG", "PC"],
-      images: ["/imgs/wizard.png", "https://img.itch.zone/aW1hZ2UvMjAwMjMxOC8xMTc3MTQyNi5wbmc=/original/mtyiCE.png", "https://img.itch.zone/aW1hZ2UvMjAwMjMxOC8xMTc3MTQyNS5wbmc=/347x500/bxqAs6.png"],
+      tags: ["Adventure", "PC"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fwizard.8e537869.png&w=640&q=75", "https://img.itch.zone/aW1hZ2UvMjAwMjMxOC8xMTc3MTQyNi5wbmc=/original/mtyiCE.png", "https://img.itch.zone/aW1hZ2UvMjAwMjMxOC8xMTc3MTQyNS5wbmc=/347x500/bxqAs6.png"],
       links: {
         live: "https://haddajidev.itch.io/the-wizard-and-the-warrior-time-keeper",
         github: "https://haddajidev.itch.io/the-wizard-and-the-warrior-time-keeper"
@@ -194,7 +194,7 @@ export const projects: ProjectsData = {
       description: "Adventure exploration stroy game",
       fullDescription: "Dark cave exploration game with puzzle elements",
       tags: ["Adventure", "PC"],
-      images: ["/imgs/cave.png", "https://img.itch.zone/aW1hZ2UvMjUyMTQ1MC8xNDk5NDQxOC5wbmc=/347x500/Id7qYI.png", "https://img.itch.zone/aW1hZ2UvMjUyMTQ1MC8xNDk5NDQxMi5wbmc=/347x500/1sWeht.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcave.b8bff699.png&w=640&q=75", "https://img.itch.zone/aW1hZ2UvMjUyMTQ1MC8xNDk5NDQxOC5wbmc=/347x500/Id7qYI.png", "https://img.itch.zone/aW1hZ2UvMjUyMTQ1MC8xNDk5NDQxMi5wbmc=/347x500/1sWeht.png"],
       links: {
         live: "https://haddajidev.itch.io/the-cursed-cave",
         github: "https://haddajidev.itch.io/the-cursed-cave"
@@ -205,8 +205,8 @@ export const projects: ProjectsData = {
       slug: "growth-journey",
       description: "Clicker game",
       fullDescription: "Educational clicker game focused on personal growth",
-      tags: ["Educational", "Web"],
-      images: ["/imgs/clicker_2.png"],
+      tags: ["Clicker", "Web"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fclicker_2.d4590d7e.png&w=640&q=75"],
       links: {
         live: "https://haddajidev.itch.io/gamejam",
         github: "https://haddajidev.itch.io/gamejam"
@@ -217,8 +217,8 @@ export const projects: ProjectsData = {
       slug: "bomb-skipper",
       description: "Arcade bomb avoidance game",
       fullDescription: "Fast-paced bomb dodging game with power-ups",
-      tags: ["Arcade", "Mobile"],
-      images: ["/imgs/bomb.png"],
+      tags: ["Arcade", "Fast"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbomb.4abf7a1c.png&w=640&q=75"],
       links: {
         live: "https://haddajidev.itch.io/bomb-skipper",
         github: "https://github.com/HaddajiDev/Bomb-Skipper"
@@ -230,7 +230,7 @@ export const projects: ProjectsData = {
       description: "Multiplayer tank battle game",
       fullDescription: "multiplayer tank combat game",
       tags: ["Multiplayer", "PC"],
-      images: ["/imgs/tank.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftank.7013f5f4.png&w=640&q=75"],
       links: {
         live: "https://haddajidev.itch.io/tank-showdown",
         github: "https://haddajidev.itch.io/tank-showdown"
@@ -242,7 +242,7 @@ export const projects: ProjectsData = {
       description: "Puzzle merge game",
       fullDescription: "Addictive merging puzzle game with strategy elements",
       tags: ["Puzzle", "Mobile"],
-      images: ["/imgs/Merge.png"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FMerge.6350e771.png&w=640&q=75"],
       links: {
         live: "https://haddajidev.itch.io/balls-merge",
         github: "https://haddajidev.itch.io/balls-merge"
@@ -253,8 +253,8 @@ export const projects: ProjectsData = {
       slug: "pirates-dual",
       description: "Pirate ship battle game",
       fullDescription: "Naval combat game with pirate ship customization",
-      tags: ["Strategy", "Web"],
-      images: ["/imgs/PirateDuel.png", "https://img.itch.zone/aW1hZ2UvMjk3NzEwOC8xNzgwOTE3My5wbmc=/347x500/v9jRNR.png", "https://img.itch.zone/aW1hZ2UvMjk3NzEwOC8xNzgwOTE2OS5wbmc=/347x500/1POwZC.png", "https://img.itch.zone/aW1hZ2UvMjk3NzEwOC8xNzgwOTE3MS5wbmc=/347x500/%2F1dZDR.png"],
+      tags: ["Strategy", "Web", "Ship"],
+      images: ["https://haddajidev.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FPirateDuel.78e50741.png&w=640&q=75", "https://img.itch.zone/aW1hZ2UvMjk3NzEwOC8xNzgwOTE3My5wbmc=/347x500/v9jRNR.png", "https://img.itch.zone/aW1hZ2UvMjk3NzEwOC8xNzgwOTE2OS5wbmc=/347x500/1POwZC.png", "https://img.itch.zone/aW1hZ2UvMjk3NzEwOC8xNzgwOTE3MS5wbmc=/347x500/%2F1dZDR.png"],
       links: {
         live: "https://haddajidev.itch.io/pirates-dual",
         github: "https://github.com/HaddajiDev/Pirate-s-Dual"
