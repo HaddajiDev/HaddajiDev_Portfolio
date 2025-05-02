@@ -101,6 +101,18 @@ export const projects: ProjectsData = {
         live: "https://savageai.vercel.app",
         github: "https://github.com/HaddajiDev/Savage-AI"
       }
+    },
+    {
+      title: "Food Rescue",
+      slug: "food-rescue",
+      description: "AI-powered food waste application",
+      fullDescription: "Artificial intelligence integration platform with various AI features to prevent food waste",
+      tags: ["AI", "Machine Learning", "Food"],
+      images: ["https://res.cloudinary.com/dqkvgv7mh/image/upload/v1746204010/sgqeavdixeutp5ofv8ja.png"],
+      links: {
+        live: "https://foodrescue-1.vercel.app/",
+        github: "https://github.com/HaddajiDev/Food-Rescue"
+      }
     }
   ],
   game: [
