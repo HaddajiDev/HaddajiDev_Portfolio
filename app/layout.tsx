@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import ClientLayout from "./ClientLayout"
 import "./globals.css"
-
+import { AlertProvider } from "../components/AlertProvider";
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
         <link rel="icon" href="/imgs/logo.png" />
       </head>
       <body className={inter.className}>
-        <ClientLayout>{children}</ClientLayout>
+        <ClientLayout><AlertProvider>{children}</AlertProvider></ClientLayout>
       </body>
     </html>
   )

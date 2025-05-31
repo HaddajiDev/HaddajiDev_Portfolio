@@ -496,3 +496,10 @@ body {
 .code-editor-content::-webkit-scrollbar-thumb:hover {
   background: #6b7280;
 }
+
+
+
+.ant-message-notice-content{
+  background-color: #ff00c1 !important;
+  color: white !important;
+}
