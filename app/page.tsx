@@ -491,36 +491,37 @@ function ContactSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false, amount: 0.3 })
   const controls = useAnimation()
-  const [name, setName] = useState<String>();
-  const [email, setEmail] = useState<String>();
-  const [_message, setMessage] = useState<String>();
-  const [priority, setPriority] = useState<String>("low");
-  const { showAlert } = useAlert();
+  const [name, setName] = useState<string>()
+  const [email, setEmail] = useState<string>()
+  const [_message, setMessage] = useState<string>()
+  const [priority, setPriority] = useState<string>("low")
+  const { showAlert } = useAlert()
   const [loading, setLoading] = useState<boolean>(false)
 
-
-  const sendInfo = async(name: String, email: String, _message: String, priority: String) => {
+  const sendInfo = async (name: string, email: string, _message: string, priority: string) => {
     try {
-      setLoading(true);
-      await axios.post("https://contact-dashboard-ashen.vercel.app/api/new", {name, email, message: _message, priority});
-      showAlert("Success", "Thank You For You Message <3", "success");
-      setLoading(false);
+      setLoading(true)
+      await axios.post("https://contact-dashboard-ashen.vercel.app/api/new", {
+        name,
+        email,
+        message: _message,
+        priority,
+      })
+      showAlert("Success", "Thank You For You Message <3", "success")
+      setLoading(false)
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
   }
 
   const handleSubmit = () => {
     try {
-      if(name && email && _message && priority){
-        sendInfo(name, email, _message, priority);
-      }
-      else{
+      if (name && email && _message && priority) {
+        sendInfo(name, email, _message, priority)
+      } else {
         showAlert("Error", "You Have To Fill All The Feilds", "error")
       }
-    } catch (error) {
-      
-    }
+    } catch (error) {}
   }
   useEffect(() => {
     if (isInView) {
@@ -647,6 +648,27 @@ function ContactSection() {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
+              <div>
+                <label htmlFor="priority" className="block text-sm font-medium text-gray-300 mb-1">
+                  Priority
+                </label>
+                <select
+                  id="priority"
+                  value={priority}
+                  onChange={(e) => setPriority(e.target.value)}
+                  className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-200"
+                >
+                  <option value="low" className="bg-gray-800">
+                    Low Priority
+                  </option>
+                  <option value="medium" className="bg-gray-800">
+                    Medium Priority
+                  </option>
+                  <option value="high" className="bg-gray-800">
+                    High Priority
+                  </option>
+                </select>
+              </div>
 
               <button
                 type="submit"
@@ -678,7 +700,6 @@ function ContactSection() {
                   "Send Message"
                 )}
               </button>
-
             </div>
           </motion.div>
         </div>
