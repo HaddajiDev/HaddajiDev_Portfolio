@@ -13,6 +13,7 @@ import Silk from "@/components/Silk"
 import Beams from "@/components/Beams"
 import Threads from '@/components/Threads';
 import Particles from "@/components/particales"
+import TiltedCard from "@/components/TiltedCard"
 
 export default function Portfolio() {
   useCursor()
@@ -384,7 +385,7 @@ function ProjectCard({ project, type, index } : any) {
   }, [isInView, controls])
 
   return (
-    <motion.div
+    <motion.div // Retaining the framer-motion wrapper for entry animations
       ref={ref}
       variants={{
         hidden: { opacity: 0, y: 20 },
@@ -393,48 +394,54 @@ function ProjectCard({ project, type, index } : any) {
       initial="hidden"
       animate={controls}
       transition={{ duration: 0.3, delay: 0.1 }}
-      className="bg-gray-900/80 backdrop-blur-sm rounded-xl border border-purple-500/20 overflow-hidden group"
     >
-      <div className="h-48 bg-gradient-to-br from-purple-900/40 to-gray-800/40 relative overflow-hidden">
-        <img
-          src={project.images?.[0] || `/placeholder.svg?height=300&width=500`}
-          alt={`${project.title} preview`}
-          className="w-full h-full object-cover opacity-40 group-hover:opacity-60 transition-opacity duration-300"
-        />
-        <div className="absolute inset-0 flex items-center justify-center">
-          {type === "web" ? (
-            <></>
-            // <Code className="w-16 h-16 text-purple-400/70 group-hover:text-purple-400 transition-all duration-300" />
-          ) : (
-            <></>// <Gamepad2 className="w-16 h-16 text-purple-400/70 group-hover:text-purple-400 transition-all duration-300" />
-          )}
-        </div>
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-gray-900 to-transparent"></div>
-      </div>
+      <Link href={`/projects/${type}/${project.slug}`}>
+      <TiltedCard
+        imageSrc={project.images?.[0] || `/placeholder.svg?height=240&width=400`}
+        altText={`${project.title} preview`}
+        captionText={project.title}
 
-      <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2 text-white">{project.title}</h3>
-        <p className="text-gray-400 mb-4">{project.description}</p>
+        containerHeight="300px" 
+        containerWidth="300px"
+        imageHeight="300px"
+        imageWidth="300px"
 
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.tags.map((tag : any) => (
-            <span key={tag} className="px-2 py-1 bg-gray-800 text-purple-300 rounded-full text-xs">
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        <div className="flex justify-end">
-          <Link
-            href={`/projects/${type}/${project.slug}`}
-            className="text-purple-400 hover:text-purple-300 text-sm font-medium flex items-center gap-1 group-hover:underline"
-          >
-            View Project
-          </Link>
-        </div>
-      </div>
+        rotateAmplitude={12}
+        scaleOnHover={1.05} 
+        showMobileWarning={false}
+        showTooltip={true}
+        displayOverlayContent={true}
+        overlayContent={
+          <div className="p-4 ">
+            
+              <p className="text-white bold p-1 mb-3 text-lg leading-relaxed line-clamp-3 ">
+                {project.title}
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tags.map((tag: any) => (
+                  <span
+                    key={tag}
+                    className="px-2 py-1 bg-gray-700/60  text-purple-300 rounded-full text-xs"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              {/* <div className="flex justify-end">
+                <Link
+                  href={`/projects/${type}/${project.slug}`}
+                  className="text-purple-400 hover:text-purple-300 text-sm font-medium flex items-center gap-1 group-hover:underline"
+                >
+                  View Project
+                </Link>
+              </div> */}
+            
+          </div>
+        }
+      />
+      </Link>
     </motion.div>
-  )
+  );
 }
 
 function ProjectsSection() {
