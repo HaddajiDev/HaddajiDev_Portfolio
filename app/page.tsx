@@ -11,6 +11,8 @@ import { message } from 'antd';
 import { useAlert } from "../components/AlertProvider";
 import Silk from "@/components/Silk"
 import Beams from "@/components/Beams"
+import Threads from '@/components/Threads';
+import Particles from "@/components/particales"
 
 export default function Portfolio() {
   useCursor()
@@ -261,10 +263,23 @@ function SkillsSection() {
 
   return (
     <section ref={ref} className="py-20 px-4 md:px-8 relative overflow-hidden">
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-900/10 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-purple-800/10 rounded-full filter blur-3xl"></div>
-      </div>
+      </div> */}
+
+      <div className="absolute inset-0 z-0">
+      <Particles
+        particleColors={['#DA70D6', '#9370DB']}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={false}
+        alphaParticles={false}
+        disableRotation={false}
+      />
+      </div> 
 
       <div className="max-w-5xl mx-auto relative z-10">
         <motion.div
@@ -558,11 +573,20 @@ function ContactSection() {
 
   return (
     <section ref={ref} className="py-20 px-4 md:px-8 relative overflow-hidden">
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
         <div className="absolute bottom-0 left-0 w-full h-full bg-purple-900/10 opacity-30"></div>
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-700/20 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-purple-800/20 rounded-full filter blur-3xl"></div>
-      </div>
+      </div> */}
+      <div className="absolute inset-0 z-0">
+      <Silk
+            speed={15}
+            scale={1}
+            color="#301934"
+            noiseIntensity={1.5}
+            rotation={0}
+          />
+      </div> 
 
       <div className="max-w-5xl mx-auto relative z-10">
         <motion.div
