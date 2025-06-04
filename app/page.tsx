@@ -9,6 +9,8 @@ import { useCursor } from "@/hooks/use-cursor"
 import axios from 'axios';
 import { message } from 'antd';
 import { useAlert } from "../components/AlertProvider";
+import Silk from "@/components/Silk"
+import Beams from "@/components/Beams"
 
 export default function Portfolio() {
   useCursor()
@@ -27,12 +29,37 @@ export default function Portfolio() {
 function HeroSection() {
   return (
     <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
+      {/* <div className="absolute inset-0 z-0">
+          <Silk
+            speed={15}
+            scale={1}
+            color="#301934"
+            noiseIntensity={1.5}
+            rotation={0}
+          />
+      </div> */}
+
+      <div>
+        <div className="absolute inset-0 z-0">
+          <Beams
+            beamWidth={3}
+            beamHeight={30}
+            beamNumber={20}
+            lightColor="#9370DB"
+            speed={2}
+            noiseIntensity={1.75}
+            scale={0.2}
+            rotation={30}
+          />
+        </div>
+      </div>
+
+      {/* <div className="absolute inset-0 z-0">
         <div className="absolute top-0 left-0 w-full h-full bg-purple-900/20 opacity-30"></div>
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-700/30 rounded-full filter blur-3xl animate-blob"></div>
         <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-900/20 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
         <div className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-purple-800/30 rounded-full filter blur-3xl animate-blob animation-delay-4000"></div>
-      </div>
+      </div> */}
 
       <div className="z-10 text-center px-4">
         <div className="mb-4">
